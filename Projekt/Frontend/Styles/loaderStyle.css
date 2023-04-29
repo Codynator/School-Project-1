@@ -1,0 +1,55 @@
+.load-text {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 15vh;
+}
+
+#loader {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--mainColour);
+}
+
+
+.fade-out {
+    opacity: 1;
+    animation-name: fadeOut;
+    animation-direction: reverse;
+    animation-duration: 1.2s;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation-fill-mode: forwards;
+}
+
+.fade-out {
+    animation-delay: 0s;
+}
+
+.fade-out {
+    display: none;
+}
