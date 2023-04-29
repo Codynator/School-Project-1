@@ -1,6 +1,7 @@
 # Plan i zamiary
 
 **Uwaga! To są tylko plany, mogą się one zmieniać.**
+Jest to strona fikcyjnego kina.
 
 Projekt będzie podzielony na poniższe strony:
 
@@ -17,18 +18,12 @@ Projekt będzie podzielony na poniższe strony:
 
 1. działający Java Script
 
-2. działająca baza danych - mechanika kont, stawiania komentarzy (lub innych reakcji), pisanie artykułów (dla uprawnionych użytkowników)
-
-3. prawidłowe i działające podłączenie do bazy danych, przy pomocy Pythona, lub PHP
-
-4. **Porządek w plikach!**
+2. **Porządek w plikach!**
 
 ---
 
 ## Opcjonalne
 
-1. zmiana motywu (jasny i ciemny)
+1. bardziej interaktywny i przejrzysty interface
 
-2. bardziej interaktywny i przejrzysty interface
-
-3. dostosowanie się strony do używanego urządzenia - sprawdzanie rozdzielczości i dostosywanie ułożenia strony
+2. dostosowanie się strony do używanego urządzenia - sprawdzanie rozdzielczości i dostosywanie ułożenia strony
