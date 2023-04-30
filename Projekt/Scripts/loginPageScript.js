@@ -28,7 +28,51 @@ function checkStatus() {
 
 
 function login() {
-    console.log("Działa");
+    console.log("Próba logowania...")
+    const nickname = loginForm.nickInput.value.trim();
+    const email = loginForm.emailInput.value.trim();
+    const password = loginForm.passwordInput.value.trim();
+    const searchedUser = {nickname: nickname, email: email, password: password};
+    let foundArr = [];
+
+    if (nickname.length === 0) {
+        showMessage("Podaj pseudonim");
+        return;
+    } else if (email.length === 0) {
+        showMessage("Podaj email")
+        return;
+    } else if (password.length === 0) {
+        showMessage("Podaj hasło")
+        return;
+    }
+
+    for (const user of users) {
+        if (user.nickname === searchedUser.nickname) {
+            console.log("Znaleziono nazwę użytkownika!");
+            foundArr.push("nickname");
+        }
+        if (user.email === searchedUser.email) {
+                console.log("Odnaleziono email!");
+                foundArr.push("email");
+        }
+        if (user.password === searchedUser.password) {
+            console.log("Odnaleziono hasło!");
+            foundArr.push("password");
+        }
+        if (foundArr.length === 3) {
+            break;
+        } else {
+            foundArr = [];
+        }
+        
+    }
+
+    if (foundArr.length === 3) {
+        currentUser = JSON.stringify(searchedUser);
+        localStorage.setItem("currentUser", currentUser);
+    } else {
+        showMessage("Niepoprawne dane");
+    }
 }
 
 
@@ -39,22 +83,20 @@ function register() {
     const confPassword = loginForm.confirmInput.value.trim();
 
     if (nickname.length === 0) {
-        par2.innerHTML = "Podaj pseudonim";
+        showMessage("Podaj pseudonum");
         return;
     } else if (email.length === 0) {
-        par2.innerHTML = "Podaj email";
+        showMessage("Podaj email");
         return;
     } else if (password.length === 0) {
-        par2.innerHTML = "Podaj hasło";
+        showMessage("Podaj hasło");
         return;
     } else if (confPassword.length === 0) {
-        par2.innerHTML = "Powtórz hasło";
+        showMessage("Powtórz hasło");
         return;
     } else if (password !== confPassword) {
-        par2.innerHTML = "Powtórz ponownie hasło";
+        showMessage("Powtórz ponownie hasło");
         return;
-    } else {
-        par2.innerHTML = "";
     }
 
     const newUser = {nickname: nickname, email: email, password: password};
@@ -62,6 +104,12 @@ function register() {
     usersJSON = JSON.stringify(users);
     localStorage.setItem("users", usersJSON);
     console.log(users);
+}
+
+
+function showMessage(msg) {
+    par2.innerHTML = msg;
+    setTimeout(() => {par2.innerHTML = ""}, 2000);
 }
 
 
