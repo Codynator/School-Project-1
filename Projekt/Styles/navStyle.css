@@ -7,16 +7,30 @@ nav {
     background-color: var(--secondaryColour);
 
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 30% 40% 30%;
+}
+
+nav h2 {
+    font-weight: 200;
+    color: var(--fontColour);
 }
 
 .nav-btn {
+    outline: 1px solid red;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
+.nav-btn2 {
+    outline: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-btn3 {
+    outline: 1px solid red;
     display: flex;
     justify-content: right;
     align-items: center;
