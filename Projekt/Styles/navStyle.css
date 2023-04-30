@@ -12,25 +12,23 @@ nav {
 
 nav h2 {
     font-weight: 200;
-    color: var(--fontColour);
+    color: white;
 }
 
 .nav-btn {
-    outline: 1px solid red;
     display: flex;
     justify-content: left;
     align-items: center;
 }
 
 .nav-btn2 {
-    outline: 1px solid red;
+    font-size: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-btn3 {
-    outline: 1px solid red;
     display: flex;
     justify-content: right;
     align-items: center;

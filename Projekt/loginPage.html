@@ -26,32 +26,32 @@
 <body>
     <nav>
         <div class="btn-1">
-            <button class="back-btn"><span class="material-symbols-outlined"
+            <button class="back-btn" id="back-btn"><span class="material-symbols-outlined"
                     style="font-size: 130%;">arrow_back</span>Powrót</button>
+        </div>
+
+        <div class="nav-btn2">
+            <h2>Deep<b>View</b> Cinema</h2>
         </div>
     </nav>
 
     <main>
-        <div class="container">
+        <div class="container" id="container">
             <h1>Zaloguj się</h1>
 
-            <form action="" id="login-form" autocomplete="off">
-                <input type="text" id="nick-input" placeholder="pseudonim"><br>
-                <input type="email" id="email-input" placeholder="adres email" autocomplete="off"><br>
-                <input type="password" id="password-input" placeholder="hasło"><br>
-                <button type="submit" id="submit-button">Zaloguj się</button><br>
-                <p>Nie masz konta? Zarejestruj się!</p>
+            <form id="login-form">
+                <input type="text" id="nickInput" placeholder="pseudonim"><br>
+                <input type="email" id="emailInput" placeholder="adres email" autocomplete="off"><br>
+                <input type="password" id="passwordInput" placeholder="hasło"><br>
+                <input type="password" id="confirmInput" placeholder="powtórz hasło" style="display: none;"><br>
+                <p id="par-2"></p>
+                <button type="submit" id="submitButton">Zaloguj się</button><br>
+                <p id="par-1">Nie masz konta? Zarejestruj się!</p>
             </form>
         </div>
     </main>
 
-    <footer>
-        <p id="par-copy">© Nataniel Krzempek</p>
-        <p>null@gaymail.com</p>
-    </footer>
-
-    <script src="./Scripts/dateScript.js"></script>
-    <script src="./Scripts/themeChanger.js"></script>
+    <script src="./Scripts/loginPageScript.js"></script>
 </body>
 
 </html>

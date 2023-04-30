@@ -13,7 +13,7 @@ main {
 .container {
     background-color: var(--secondaryColour);
     width: 35vw;
-    margin: 1rem;
+    margin-top: 3em;
     padding: 1em;
 
     border: 0.2rem solid orange;
@@ -21,7 +21,7 @@ main {
     box-shadow: 0.5em 0.5em 2em black;
 
     color: var(--fontColour);
-    font-size: 150%;
+    font-size: 140%;
 
     display: grid;
     grid-template-columns: auto;
@@ -38,6 +38,17 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#par-1 {
+    cursor: pointer;
+    border-bottom: 0.1em solid var(--secondaryColour);
+    transition: 0.3s;
+}
+
+#par-1:hover {
+    color: rgb(74, 74, 255);
+    border-bottom: 0.1em solid rgb(74, 74, 255);
 }
 
 .container input {
