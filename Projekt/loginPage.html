@@ -37,17 +37,24 @@
 
     <main>
         <div class="container" id="container">
-            <h1>Zaloguj się</h1>
+            <div id="formContainer">
+                <h1>Zaloguj się</h1>
 
-            <form id="login-form">
-                <input type="text" id="nickInput" placeholder="pseudonim"><br>
-                <input type="email" id="emailInput" placeholder="adres email" autocomplete="off"><br>
-                <input type="password" id="passwordInput" placeholder="hasło"><br>
-                <input type="password" id="confirmInput" placeholder="powtórz hasło" style="display: none;"><br>
-                <p id="par-2"></p>
-                <button type="submit" id="submitButton">Zaloguj się</button><br>
-                <p id="par-1">Nie masz konta? Zarejestruj się!</p>
-            </form>
+                <form id="login-form">
+                    <input type="text" id="nickInput" placeholder="pseudonim"><br>
+                    <input type="email" id="emailInput" placeholder="adres email" autocomplete="off"><br>
+                    <input type="password" id="passwordInput" placeholder="hasło"><br>
+                    <input type="password" id="confirmInput" placeholder="powtórz hasło" style="display: none;"><br>
+                    <p id="par-2"></p>
+                    <button type="submit" id="submitButton">Zaloguj się</button><br>
+                    <p id="par-1">Nie masz konta? Zarejestruj się!</p>
+                </form>
+            </div>
+            <div id="loggedContainer" style="display: none;">
+                <h1>Zalogowano!</h1>
+                <p></p><br>
+                <button type="button">Wyloguj</button>
+            </div>
         </div>
     </main>
 

@@ -1,9 +1,3 @@
-const btnLogin = document.getElementById("btn-login");
-const toggle = document.getElementById("btn-menu");
-const menu = document.getElementById("menu");
-const divMenu = document.getElementById("div-menu");
-
-
 // Otwiera i zamyka menu
 function showMenu() {
     menu.classList.toggle("open");
@@ -27,13 +21,19 @@ function loadPage() {
 
 // ? Będzie odpowiadać za logowanie
 function login() {
-    if (btnLogin.innerHTML == '<span class="material-symbols-outlined">login</span>Zaloguj się') {
-        btnLogin.innerHTML = '<span class="material-symbols-outlined">account_circle</span>';
+    if (currentUser === null) {
+        location.assign("loginPage.html");
     } else {
-        // btnLogin.innerHTML = '<span class="material-symbols-outlined">login</span>Zaloguj się';
-        return;
+        btnLogin.innerHTML = '<span class="material-symbols-outlined">account_circle</span>';
     }
 }
+
+
+const btnLogin = document.getElementById("btn-login");
+const toggle = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+const divMenu = document.getElementById("div-menu");
+let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 
 btnLogin.addEventListener("click", login);

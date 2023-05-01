@@ -78,3 +78,10 @@ main {
 .container button:hover {
     border: 0.1em solid white;
 }
+
+#loggedContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
