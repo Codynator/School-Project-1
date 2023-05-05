@@ -1,3 +1,14 @@
+[data-theme="dark"] {
+    --containerColour: var(--secondaryColour) !important;
+}
+[data-theme="light"] {
+    --containerColour: var(--mainColour) !important;
+}
+:root {
+    --containerColour: var(--secondaryColour);
+}
+
+
 body {
     background-color: var(--mainColour);
 }
@@ -11,7 +22,7 @@ main {
 }
 
 .container {
-    background-color: var(--secondaryColour);
+    background-color: var(--containerColour);
     width: 35vw;
     margin-top: 3em;
     padding: 1em;
@@ -57,7 +68,7 @@ main {
     color: var(--fontColour);
     width: 90%;
 
-    background-color: var(--secondaryColour);
+    background-color: var(--containerColour);
     border: 0.1em solid var(--fontColour);
 }
 

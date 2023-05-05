@@ -56,10 +56,13 @@
         </div>
 
         <!-- * Struktura profilu -->
-        <div id="div-profile">
-            <div id="profile">
-                <p></p>
-                <button type="button">Wyloguj</button>
+        <div id="div-profile" class="div-profile">
+            <div id="profile" class="profile open">
+                <p>Jesteś zalogowany jako:<br></p>
+                <div>
+                    <button type="button" id="btnAccount"><span class="material-symbols-outlined">settings_account_box</span>Konto</button>
+                    <button type="button" id="btnLogout"><span class="material-symbols-outlined">logout</span>Wyloguj</butto>
+                </div>
             </div>
         </div>
     </nav>
@@ -121,6 +124,7 @@
     <script src="./Scripts/themeChanger.js"></script>
     <script src="./Scripts/welcomePageScript.js"></script>
     <script src="./Scripts/dateScript.js"></script>
+    <script src="./Scripts/navScript.js"></script>
     <!-- <script src="./Scripts/imgChecker.js"></script> -->
 </body>  
 </html>
