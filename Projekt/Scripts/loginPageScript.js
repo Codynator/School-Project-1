@@ -110,15 +110,12 @@ function findUser(lookFor, createUser = false, removeUser = false) {
 
     for (const user of users) {
         if (user.nickname === lookFor.nickname) {
-            console.log("Znaleziono nazwę użytkownika!");
             foundArr.push("nickname");
         }
         if (user.email === lookFor.email) {
-                console.log("Odnaleziono email!");
                 foundArr.push("email");
         }
         if (user.password === lookFor.password) {
-            console.log("Odnaleziono hasło!");
             foundArr.push("password");
         }
         if (foundArr.length === 3) {
@@ -146,6 +143,7 @@ function findUser(lookFor, createUser = false, removeUser = false) {
 }
 
 
+// * Funckja nie jest używana na stronie
 // Wylogowywanie użykownika.
 function logout() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
@@ -201,4 +199,4 @@ if (usersJSON === null) {
 btnBack.addEventListener("click", () => {history.back()});
 loginForm.addEventListener("submit", checkData);
 par1.addEventListener("click", checkStatus);
-loggedContainer.querySelector("button").addEventListener("click", logout);
+loggedContainer.querySelector("button").addEventListener("click", () => {history.back()});

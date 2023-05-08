@@ -5,7 +5,7 @@ const parCopy = document.getElementById("par-copy");
 function printYear() {
     const date = new Date();
     const msg = date.toLocaleString("default", {"year": "numeric"});
-    parCopy.innerHTML = `© Nataniel Krzempek ${msg}`;
+    parCopy.innerHTML = `© DeepDive Cinema ${msg}`;
 }
 
 printYear();

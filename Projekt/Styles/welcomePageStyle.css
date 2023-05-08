@@ -32,6 +32,10 @@ header {
 
 /* * Main */
 
+img {
+    width: 100%;
+}
+
 .div-menu {
     position: relative;
     left: 0;
@@ -52,13 +56,21 @@ header {
 .div-right {
     color: rgb(156, 156, 156);
     font-size: 130%;
-
     border-bottom: 0.5em solid rgba(255, 166, 0, 0.300);
     box-shadow: 0em 0em 0.2em rgb(0, 0, 0);
     padding: 2%;
     margin-top: 5em;
-
     transition-duration: 0.3s;
+}
+
+.div-left {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.div-right {
+    display: grid;
+    grid-template-columns: 30% 70%;
 }
 
 .div-left:hover,
@@ -66,4 +78,13 @@ header {
     color: var(--fontColour);
     box-shadow: 0em 0em 1em rgb(0, 0, 0);
     border-bottom: 0.5em solid orange;
+}
+
+.div-left div,
+.div-right div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
