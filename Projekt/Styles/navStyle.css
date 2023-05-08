@@ -35,7 +35,7 @@ nav h2 {
 /* * Styl dla elementu menu */
 .div-menu {
     position: fixed;
-    top: -3px;
+    top: var(--navHeight);
     left: 0px;
     width: 15vw;
     visibility: hidden;

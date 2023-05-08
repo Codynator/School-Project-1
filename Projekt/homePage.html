@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./Styles/indexStyle.css">
+    <link rel="stylesheet" href="./Styles/navStyle.css">
+    <link rel="stylesheet" href="./Styles/footerStyle.css">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 200,
+                'GRAD' 0,
+                'opsz' 48;
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-btn">
+            <button id="btn-menu" type="button" class="menu-btn"><span
+                    class="material-symbols-outlined">menu</span>Menu</button>
+        </div>
+
+        <div class="nav-btn2">
+            <h2>Deep<b>View</b> Cinema</h2>
+        </div>
+
+        <div class="nav-btn3">
+            <button id="btn-theme" type="button" class="theme-btn"><span
+                    class="material-symbols-outlined">toggle_off</span></button>
+            <button id="btn-login" type="button" class="login-btn"><span
+                    class="material-symbols-outlined">login</span>Zaloguj się</button>
+        </div>
+
+        <!-- * Struktura menu -->
+        <div id="div-menu" class="div-menu">
+            <div class="menu" id="menu">
+                <button type="button" id="btn-home"><span class="material-symbols-outlined">home</span>główna
+                    strona</button>
+                <button type="button" id="btn-settings"><span
+                        class="material-symbols-outlined">settings</span>ustawienia</button>
+                <button type="button" id="btn-info"><span
+                        class="material-symbols-outlined">info</span>informacje</button>
+                <button type="button" id="btn-help"><span class="material-symbols-outlined">help</span>pomoc</button>
+            </div>
+        </div>
+
+        <!-- * Struktura profilu -->
+        <div id="div-profile" class="div-profile">
+            <div id="profile" class="profile open">
+                <p>Jesteś zalogowany jako:<br></p>
+                <div>
+                    <button type="button" id="btnAccount"><span
+                            class="material-symbols-outlined">settings_account_box</span>Konto</button>
+                    <button type="button" id="btnLogout"><span class="material-symbols-outlined">logout</span>Wyloguj
+                        </butto>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Premiera *TYTUŁ FILMU* już u nas!</h1>
+    </header>
+
+    <main>
+        <div class="hotbar"></div>
+
+        <div class="movies-container" id="movies-container"></div>
+    </main>
+
+    <footer>
+        <p id="par-copy">© DeepDive Cinema</p>
+        <p>deepdivecinema@mail.pl</p>
+    </footer>
+
+    <script src="./Scripts/themeChanger.js"></script>
+    <script src="./Scripts/dateScript.js"></script>
+    <script src="./Scripts/navScript.js"></script>
+</body>
+
+</html>

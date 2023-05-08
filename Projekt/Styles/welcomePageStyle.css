@@ -8,7 +8,8 @@ header {
 
     /* background-image: url("https://gazetacodzienna.pl/sites/default/files/imagecache/full_scr_watermark/5947_g_0_0.jpg"); */
     /* background-image: url("https://wallpapercave.com/wp/wp2081265.jpg"); */
-    background-image: url("https://images.pexels.com/photos/7513412/pexels-photo-7513412.jpeg");
+    /* background-image: url("https://images.pexels.com/photos/7513412/pexels-photo-7513412.jpeg"); */
+    background-image: url("./Assets/cinema.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -73,6 +74,16 @@ img {
     grid-template-columns: 30% 70%;
 }
 
+.div-left p {
+    text-align: left;
+}
+.div-right p {
+    text-align: right;
+}
+.div-left h3, .div-right h3 {
+    text-align: center;
+}
+
 .div-left:hover,
 .div-right:hover {
     color: var(--fontColour);
@@ -82,7 +93,6 @@ img {
 
 .div-left div,
 .div-right div {
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
