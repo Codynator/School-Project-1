@@ -1,5 +1,5 @@
 # School-Project-1
 
 This is my project for school.
-It's probably flawed as hell, but whatever.  
+I'm aware that, it's flawed. I'm still a beginner.  
 Btw, it's in Polish.
