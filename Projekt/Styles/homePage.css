@@ -1,0 +1,29 @@
+header {
+    width: 100vw;
+    height: 50vh;
+    background-color:darkblue;
+    color: var(--fontSecondaryColour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    border-bottom: 0.1em solid orange;
+}
+
+.hotbar {
+    height: 10vh;
+    margin-inline: 5vw;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10em;
+
+}
+
+.hotbar button {
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    border: none;
+}
