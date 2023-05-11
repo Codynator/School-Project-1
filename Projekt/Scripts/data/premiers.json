@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Ant-Man and the Wasp: Quantumania",
+        "description": "kolejna produkcja Marvela z udziałem tytułowego superbohatera - Ant-Mana."
+    },
+    {
+        "title": "Titanic",
+        "description": "powrót kultowego filmu Jamesa Camerona z 1997 roku, który został zremasterowany i wyświetlany w technologii 3D."
+    },
+    {
+        "title": "Oppenheimer",
+        "description": "film opowiadający o naukowcu Robercie Oppenheimerze, fizyku, który uważany jest za twórcę bomby atomowej. W rolę główną wcieli się Cillian Murphy."
+    },
+    {
+        "title": "Barbie",
+        "description": "filmowa adaptacja popularnej lalki, w której główną rolę zagra Margot Robbie."
+    },
+    {
+        "title": "Madame Web",
+        "description": "film o tajemniczej postaci z uniwersum Spider-Mana, która ma zdolność przewidywania przyszłości i łączenia się z pajęczą siecią."
+    },
+    {
+        "title": "Diuna 2",
+        "description": "kontynuacja ekranizacji słynnej powieści Franka Herberta o walce o planetę Arrakis. W obsadzie znów zobaczymy Timaothée Chalameta, Zendayę i Oscara Isaaca."
+    },
+    {
+        "title": "Ballada Ptaków i Węży",
+        "description": "prequel trylogii Igrzyska śmierci, który przedstawia młodość prezydenta Snowa i jego pierwsze spotkanie z Katniss Everdeen."
+    },
+    {
+        "title": "Wonka",
+        "description": "film o początkach kariery Willy'ego Wonki, ekscentrycznego właściciela fabryki czekolady. W rolę tytułową wcieli się Timothée Chalamet."
+    },
+    {
+        "title": "Szybcy i wściekli 10",
+        "description": "dziesiąta część serii o nieustraszonych kierowcach i ich szalonych przygodach. W obsadzie znów zobaczymy Vin Diesela, Michelle Rodriguez i Tyreese Gibsona."
+    },
+    {
+        "title": "Super Mario Bros. Film",
+        "description": "animowana adaptacja kultowej gry wideo o przygodach włoskiego hydraulika i jego brata. Film ma być wierny oryginałowi i pełen humoru."
+    }
+]
