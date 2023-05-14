@@ -147,7 +147,8 @@ nav h2 {
 }
 
 .profile button:hover {
-    box-shadow: 0em 0em 0.8em white;
+    box-shadow: 0em 0em 1em white;
+    background-color: white;
 }
 
 .profile div {
