@@ -2,6 +2,10 @@
     --movieSize: 400px;
 }
 
+html::-webkit-scrollbar{
+    display: none;
+}
+
 
 body {
     background-color: var(--mainColour);
@@ -22,12 +26,17 @@ h1 {
 }
 
 .hotbar {
+    margin-block: 5vh;
     height: 10vh;
-    margin-inline: 5vw;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
 
+.hotbar div {
+    margin-inline: 3vw;
+    height: 100%;
+    width: 100%;
 }
 
 .hotbar button {
@@ -45,7 +54,6 @@ h1 {
 }
 
 .movies-container {
-    outline: 1px solid red;
     margin-inline: 2em;
     padding-bottom: 5%;
     display: grid;
@@ -54,8 +62,9 @@ h1 {
 }
 
 .movie {
+    outline: 1px solid green;
+    height: 50vh;
     background-color: cornflowerblue;
-    height: 25em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,10 +72,35 @@ h1 {
 }
 
 .page-control {
-    outline: 1px solid red;
     margin-inline: 2em;
+    margin-bottom: 5vh;
+    font-size: 200%;
+    color: var(--fontColour);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
+}
+
+.page-control p {
+    margin-inline: 2em;
+}
+
+.page-control button {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--fontColour);
+    font-size: 70%;
+    border: none;
+    border-radius: 100%;
+    height: 10vh;
+    width: 10vh;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-control button:hover {
+    background-color: rgba(255, 166, 0, 0.8);
+    box-shadow: 0em 0em 1em var(--fontColour);
 }
