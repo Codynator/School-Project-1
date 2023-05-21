@@ -1,5 +1,6 @@
 import premiers from "./data/premiers.json" assert { type: "json"};
 import movies from "./data/movies.json" assert { type: "json"};
+const centerContent = document.getElementById("center-content");
 const btn1 = document.getElementById("btn-1");
 const btn2 = document.getElementById("btn-2");
 const btn3 = document.getElementById("btn-3");
@@ -24,7 +25,7 @@ function getMovies() {
             } else {
                 break;
             }
-            
+
         }
         counter += 8;
     }
@@ -44,6 +45,7 @@ function showMovies() {
     }
 }
 
+
 function changePage(direction) {
     let page = parseInt(parPageNumber.innerHTML);
     if (page <= 0 && direction === "down") {
@@ -62,7 +64,27 @@ function changePage(direction) {
 }
 
 
+function showDescription(event) {
+    if (event.target.className !== "movie") {
+        return;
+    }
+    const allMovies = movies.concat(premiers);
+    const findMovie = event.target.innerText;
+    for (const movie of allMovies) {
+        console.log(movie.title);
+        if (movie.title === findMovie) {
+            console.log("Znaleziono film");
+            document.getElementById("movie-title").innerText = movie.title;
+            document.getElementById("movie-desc").innerText = movie.description;
+            centerContent.style.visibility = "visible";
+            return;
+        }
+    }
+}
+
+
 getMovies();
 showMovies();
-btnPrev.addEventListener("click", () => {changePage("down")});
-btnNext.addEventListener("click", () => {changePage("up")});
+btnPrev.addEventListener("click", () => { changePage("down") });
+btnNext.addEventListener("click", () => { changePage("up") });
+moviesContainer.addEventListener("click", showDescription);

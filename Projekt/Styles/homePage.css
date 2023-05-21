@@ -2,8 +2,14 @@
     --movieSize: 400px;
 }
 
-html::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar{
+    width: 0.8rem;
+    background: var(--secondaryColour);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 1rem;
 }
 
 
@@ -23,6 +29,49 @@ header {
 
 h1 {
     border-bottom: 0.1em solid orange;
+}
+
+.center-content {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.center-content > div {
+    display: grid;
+    grid-template-columns: 20vw 21vw;
+}
+
+.center-content img {
+    width: 20vw;
+}
+
+.movie-content {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background-color: var(--mainColour);
+    color: var(--fontColour);
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.movie-poster {
+    width: 20vw;
+    border: 1em solid var(--mainColour);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background-color: var(--mainColour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hotbar {
@@ -62,6 +111,8 @@ h1 {
 }
 
 .movie {
+    outline: none;
+    z-index: 2;
     outline: 1px solid green;
     height: 50vh;
     background-color: cornflowerblue;
@@ -69,6 +120,13 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 0.3s;
+}
+
+.movie:hover {
+    outline: none;
+    box-shadow: 0em 0em 2em black;
+    transform: scale(110%);
 }
 
 .page-control {

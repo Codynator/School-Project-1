@@ -3,6 +3,7 @@ nav {
     height: var(--navHeight);
     max-height: var(--navHeight);
     top: 0px;
+    z-index: 5;
     background-color: var(--secondaryColour);
     display: grid;
     grid-template-columns: 30% 40% 30%;
