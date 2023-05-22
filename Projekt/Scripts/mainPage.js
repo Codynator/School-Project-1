@@ -39,7 +39,7 @@ function showMovies() {
     for (const movie of moviePages[page]) {
         moviesContainer.innerHTML += `
         <div class="movie">
-            ${movie.title}
+            <h3>${movie.title}</h3>
         </div>
         `;
     }
@@ -71,9 +71,7 @@ function showDescription(event) {
     const allMovies = movies.concat(premiers);
     const findMovie = event.target.innerText;
     for (const movie of allMovies) {
-        console.log(movie.title);
         if (movie.title === findMovie) {
-            console.log("Znaleziono film");
             document.getElementById("movie-title").innerText = movie.title;
             document.getElementById("movie-desc").innerText = movie.description;
             centerContent.style.visibility = "visible";
@@ -83,8 +81,19 @@ function showDescription(event) {
 }
 
 
+function closeDescription(event) {
+    if (centerContent.style.visibility !== "hidden" && event.key === "Escape") {
+        centerContent.style.visibility = "hidden";
+    } else if (centerContent.style.visibility !== "hidden" && event.target.id === "center-content") {
+        centerContent.style.visibility = "hidden";
+    }
+}
+
+
 getMovies();
 showMovies();
 btnPrev.addEventListener("click", () => { changePage("down") });
 btnNext.addEventListener("click", () => { changePage("up") });
 moviesContainer.addEventListener("click", showDescription);
+document.addEventListener("keydown", closeDescription);
+document.addEventListener("click", closeDescription);

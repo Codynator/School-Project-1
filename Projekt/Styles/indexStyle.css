@@ -17,6 +17,16 @@
     --navElmHeight: 90%;
 }
 
+::-webkit-scrollbar {
+    width: 0.8rem;
+    background: var(--secondaryColour);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;

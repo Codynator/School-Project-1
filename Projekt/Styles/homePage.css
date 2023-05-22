@@ -2,16 +2,15 @@
     --movieSize: 400px;
 }
 
-::-webkit-scrollbar{
-    width: 0.8rem;
-    background: var(--secondaryColour);
-}
+@keyframes imageSlide {
+    0% {
+        box-shadow: none;
+    }
 
-::-webkit-scrollbar-thumb {
-    background-color: orange;
-    border-radius: 1rem;
+    100% {
+        box-shadow: 0em 0em 2em black;
+    }
 }
-
 
 body {
     background-color: var(--mainColour);
@@ -20,7 +19,7 @@ body {
 header {
     width: 100%;
     height: 50vh;
-    background-color:darkblue;
+    background-color: darkblue;
     color: var(--fontSecondaryColour);
     display: flex;
     justify-content: center;
@@ -43,7 +42,7 @@ h1 {
     visibility: hidden;
 }
 
-.center-content > div {
+.center-content>div {
     display: grid;
     grid-template-columns: 20vw 21vw;
 }
@@ -107,25 +106,39 @@ h1 {
     padding-bottom: 5%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
-    gap:calc(20% / 3);
+    gap: calc(20% / 3);
+}
+
+.movies-container h3 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding-block: 1em;
 }
 
 .movie {
     outline: none;
     z-index: 2;
-    outline: 1px solid green;
     height: 50vh;
-    background-color: cornflowerblue;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--fontSecondaryColour);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url("./Assets/john_wick_4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     transition: 0.3s;
 }
 
 .movie:hover {
     outline: none;
     box-shadow: 0em 0em 2em black;
+    background-size: 100%;
+    animation-name: imageSlide;
+    animation-duration: 0.3s;
     transform: scale(110%);
 }
 
