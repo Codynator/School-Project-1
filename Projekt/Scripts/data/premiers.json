@@ -1,42 +1,52 @@
 [
     {
         "title": "Ant-Man and the Wasp: Quantumania",
-        "description": "kolejna produkcja Marvela z udziałem tytułowego superbohatera - Ant-Mana."
+        "description": "kolejna produkcja Marvela z udziałem tytułowego superbohatera - Ant-Mana.",
+        "image": "" 
     },
     {
         "title": "Titanic",
-        "description": "powrót kultowego filmu Jamesa Camerona z 1997 roku, który został zremasterowany i wyświetlany w technologii 3D."
+        "description": "powrót kultowego filmu Jamesa Camerona z 1997 roku, który został zremasterowany i wyświetlany w technologii 3D.",
+        "image": ""
     },
     {
         "title": "Oppenheimer",
-        "description": "film opowiadający o naukowcu Robercie Oppenheimerze, fizyku, który uważany jest za twórcę bomby atomowej. W rolę główną wcieli się Cillian Murphy."
+        "description": "film opowiadający o naukowcu Robercie Oppenheimerze, fizyku, który uważany jest za twórcę bomby atomowej. W rolę główną wcieli się Cillian Murphy.",
+        "image": ""
     },
     {
         "title": "Barbie",
-        "description": "filmowa adaptacja popularnej lalki, w której główną rolę zagra Margot Robbie."
+        "description": "filmowa adaptacja popularnej lalki, w której główną rolę zagra Margot Robbie.",
+        "image": ""
     },
     {
         "title": "Madame Web",
-        "description": "film o tajemniczej postaci z uniwersum Spider-Mana, która ma zdolność przewidywania przyszłości i łączenia się z pajęczą siecią."
+        "description": "film o tajemniczej postaci z uniwersum Spider-Mana, która ma zdolność przewidywania przyszłości i łączenia się z pajęczą siecią.",
+        "image": ""
     },
     {
         "title": "Diuna 2",
-        "description": "kontynuacja ekranizacji słynnej powieści Franka Herberta o walce o planetę Arrakis. W obsadzie znów zobaczymy Timaothée Chalameta, Zendayę i Oscara Isaaca."
+        "description": "kontynuacja ekranizacji słynnej powieści Franka Herberta o walce o planetę Arrakis. W obsadzie znów zobaczymy Timaothée Chalameta, Zendayę i Oscara Isaaca.",
+        "image": ""
     },
     {
         "title": "Ballada Ptaków i Węży",
-        "description": "prequel trylogii Igrzyska śmierci, który przedstawia młodość prezydenta Snowa i jego pierwsze spotkanie z Katniss Everdeen."
+        "description": "prequel trylogii Igrzyska śmierci, który przedstawia młodość prezydenta Snowa i jego pierwsze spotkanie z Katniss Everdeen.",
+        "image": ""
     },
     {
         "title": "Wonka",
-        "description": "film o początkach kariery Willy'ego Wonki, ekscentrycznego właściciela fabryki czekolady. W rolę tytułową wcieli się Timothée Chalamet."
+        "description": "film o początkach kariery Willy'ego Wonki, ekscentrycznego właściciela fabryki czekolady. W rolę tytułową wcieli się Timothée Chalamet.",
+        "image": ""
     },
     {
         "title": "Szybcy i wściekli 10",
-        "description": "dziesiąta część serii o nieustraszonych kierowcach i ich szalonych przygodach. W obsadzie znów zobaczymy Vin Diesela, Michelle Rodriguez i Tyreese Gibsona."
+        "description": "dziesiąta część serii o nieustraszonych kierowcach i ich szalonych przygodach. W obsadzie znów zobaczymy Vin Diesela, Michelle Rodriguez i Tyreese Gibsona.",
+        "image": ""
     },
     {
         "title": "Super Mario Bros. Film",
-        "description": "animowana adaptacja kultowej gry wideo o przygodach włoskiego hydraulika i jego brata. Film ma być wierny oryginałowi i pełen humoru."
+        "description": "animowana adaptacja kultowej gry wideo o przygodach włoskiego hydraulika i jego brata. Film ma być wierny oryginałowi i pełen humoru.",
+        "image": ""
     }
 ]

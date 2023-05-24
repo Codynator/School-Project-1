@@ -8,20 +8,23 @@ const moviesContainer = document.getElementById("movies-container");
 const btnPrev = document.getElementById("btn-prev");
 const btnNext = document.getElementById("btn-next");
 const parPageNumber = document.getElementById("par-page-number");
+const pageControl = document.getElementById("page-control");
+const ticketsContainer = document.getElementById("tickets-container");
 let moviePages = [];
-const pages = Math.ceil(movies.length / 8);
+let pages;
 
 
-function getMovies() {
+function getMovies(moviesArr) {
     moviePages = [];
+    pages = Math.ceil(moviesArr.length / 8);
 
     // Do każdej strony jest dodawane po 8 filmów.
     let counter = 0;
     for (let i = 0; i < pages; i++) {
         moviePages.push([]);
         for (let x = counter; x < counter + 8; x++) {
-            if (movies[x] !== undefined) {
-                moviePages[i].push(movies[x]);
+            if (moviesArr[x] !== undefined) {
+                moviePages[i].push(moviesArr[x]);
             } else {
                 break;
             }
@@ -35,8 +38,12 @@ function getMovies() {
 
 function showMovies() {
     const page = parseInt(parPageNumber.innerHTML);
+    moviesContainer.style.display = "grid";
+    pageControl.style.display = "flex";
+
+    if (page > moviePages.length) { return; }
     moviesContainer.innerHTML = "";
-    for (const movie of moviePages[page]) {
+    for (const movie of moviePages[page - 1]) {
         moviesContainer.innerHTML += `
         <div class="movie">
             <h3>${movie.title}</h3>
@@ -48,9 +55,14 @@ function showMovies() {
 
 function changePage(direction) {
     let page = parseInt(parPageNumber.innerHTML);
-    if (page <= 0 && direction === "down") {
-        page = 0;
-    } else if (page >= pages - 1 && direction === "up") {
+    console.log(page);
+    if (page > moviePages.length) {
+        page = moviePages.length;
+    }
+
+    if (page <= 1 && direction === "down") {
+        page = 1;
+    } else if (page >= pages && direction === "up") {
         page = page;
     } else {
         if (direction === "up") {
@@ -90,10 +102,19 @@ function closeDescription(event) {
 }
 
 
-getMovies();
+function showTickets() {
+    pageControl.style.display = "none";
+    moviesContainer.style.display = "none";
+}
+
+
+getMovies(movies);
 showMovies();
 btnPrev.addEventListener("click", () => { changePage("down") });
 btnNext.addEventListener("click", () => { changePage("up") });
 moviesContainer.addEventListener("click", showDescription);
 document.addEventListener("keydown", closeDescription);
 document.addEventListener("click", closeDescription);
+btn3.addEventListener("click", () => { getMovies(movies); showMovies(); });
+btn2.addEventListener("click", showTickets);
+btn1.addEventListener("click", () => { getMovies(premiers); showMovies(); });

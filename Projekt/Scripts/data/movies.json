@@ -1,74 +1,92 @@
 [
     {
         "title": "Strażnicy Galaktyki: Volume 3",
-        "description": "Trzecia część przygód kosmicznych awanturników z uniwersum Marvela. W reżyserii Jamesa Gunna."
+        "description": "Trzecia część przygód kosmicznych awanturników z uniwersum Marvela. W reżyserii Jamesa Gunna.",
+        "image": "galaxy-guardians-3.jpg"
     },
     {
         "title": "John Wick 4",
-        "description": "Czwarta część serii o niezwykle skutecznym płatnym zabójcy, który musi stawić czoła kolejnym wrogom. W roli głównej Keanu Reeves."
+        "description": "Czwarta część serii o niezwykle skutecznym płatnym zabójcy, który musi stawić czoła kolejnym wrogom. W roli głównej Keanu Reeves.",
+        "image": "john_wick_4.jpg"
     },
     {
         "title": "Dungeons & Dragons: Złodziejski honor",
-        "description": "Filmowa adaptacja popularnej gry fabularnej o świecie pełnym magii i potworów. W obsadzie Chris Pine, Michelle Rodriguez i Hugh Grant."
+        "description": "Filmowa adaptacja popularnej gry fabularnej o świecie pełnym magii i potworów. W obsadzie Chris Pine, Michelle Rodriguez i Hugh Grant.",
+        "image": ""
     },
     {
         "title": "Air",
-        "description": "Dramat sportowy o młodym bokserze, który musi zmierzyć się z własnymi demonami i rywalami na ringu. W roli głównej Kelvin Harrison Jr."
+        "description": "Dramat sportowy o młodym bokserze, który musi zmierzyć się z własnymi demonami i rywalami na ringu. W roli głównej Kelvin Harrison Jr.",
+        "image": ""
     },
     {
         "title": "Fenomen",
-        "description": "Dokumentalny film o fenomenie polskiego kina i jego wpływie na światową kinematografię. W filmie występują m.in. Andrzej Wajda, Roman Polański i Agnieszka Holland."
+        "description": "Dokumentalny film o fenomenie polskiego kina i jego wpływie na światową kinematografię. W filmie występują m.in. Andrzej Wajda, Roman Polański i Agnieszka Holland.",
+        "image": ""
     },
     {
         "title": "Tetris",
-        "description": "Film opowiadający o historii powstania i sukcesie kultowej gry wideo Tetris. W rolach głównych Taron Egerton, Jon S. Baird i Timur Bekmambetov."
+        "description": "Film opowiadający o historii powstania i sukcesie kultowej gry wideo Tetris. W rolach głównych Taron Egerton, Jon S. Baird i Timur Bekmambetov.",
+        "image": ""
     },
     {
         "title": "Jestem otchłanią",
-        "description": "Włoski dramat o młodej kobiecie, która pracuje jako nurkarka w podwodnym laboratorium i odkrywa niezwykłą więź z głębinami morza."
+        "description": "Włoski dramat o młodej kobiecie, która pracuje jako nurkarka w podwodnym laboratorium i odkrywa niezwykłą więź z głębinami morza.",
+        "image": ""
     },
     {
         "title": "Głodni",
-        "description": "Tajski dramat o grupie nastolatków, którzy muszą przetrwać w świecie pełnym przemocy i korupcji. Film zdobył wiele nagród na międzynarodowych festiwalach."
+        "description": "Tajski dramat o grupie nastolatków, którzy muszą przetrwać w świecie pełnym przemocy i korupcji. Film zdobył wiele nagród na międzynarodowych festiwalach.",
+        "image": ""
     },
     {
         "title": "Missing",
-        "description": "Thriller o młodej kobiecie, która próbuje odnaleźć swoją zaginioną siostrę. W rolach głównych Elizabeth Olsen, Jason Sudeikis i Dakota Fanning."
+        "description": "Thriller o młodej kobiecie, która próbuje odnaleźć swoją zaginioną siostrę. W rolach głównych Elizabeth Olsen, Jason Sudeikis i Dakota Fanning.",
+        "image": ""
     },
     {
         "title": "Siła ducha",
-        "description": "Biograficzny film o Jessice Watson, australijskiej żeglarka, która jako najmłodsza osoba na świecie opłynęła samotnie świat. W roli głównej Teagan Croft."
+        "description": "Biograficzny film o Jessice Watson, australijskiej żeglarka, która jako najmłodsza osoba na świecie opłynęła samotnie świat. W roli głównej Teagan Croft.",
+        "image": ""
     },
     {
         "title": "Oszustwo",
-        "description": "Film o oszustce, która wykorzystuje swoje umiejętności do zdobywania bogatych mężczyzn. W rolach głównych Julianne Moore, Sebastian Stan i Bobby Cannavale."
+        "description": "Film o oszustce, która wykorzystuje swoje umiejętności do zdobywania bogatych mężczyzn. W rolach głównych Julianne Moore, Sebastian Stan i Bobby Cannavale.",
+        "image": ""
     },
     {
         "title": "Siedmiu krolów musi umrzeć",
-        "description": "Filmowa adaptacja bestsellerowej powieści Bernarda Cornwella o losach Uhtreda z Bebbanburga w czasach wikingów. W rolach głównych Alexander Dreymon, Emily Cox i David Dawson."
+        "description": "Filmowa adaptacja bestsellerowej powieści Bernarda Cornwella o losach Uhtreda z Bebbanburga w czasach wikingów. W rolach głównych Alexander Dreymon, Emily Cox i David Dawson.",
+        "image": ""
     },
     {
         "title": "Magiczna słonica",
-        "description": "Animowany film o chłopcu, który szuka swojej zaginionej siostry z pomocą magicznej słonicy. Film jest ekranizacją powieści Kate DiCamillo."
+        "description": "Animowany film o chłopcu, który szuka swojej zaginionej siostry z pomocą magicznej słonicy. Film jest ekranizacją powieści Kate DiCamillo.",
+        "image": ""
     },
     {
         "title": "Bo się boi",
-        "description": "Horror komediowy o mężczyźnie, który musi stawić czoła swoim największym lękom po śmierci matki. W rolach głównych Beau Bridges, Alison Brie i John Cena."
+        "description": "Horror komediowy o mężczyźnie, który musi stawić czoła swoim największym lękom po śmierci matki. W rolach głównych Beau Bridges, Alison Brie i John Cena.",
+        "image": ""
     },
     {
         "title": "Skołowani",
-        "description": "Komedia romantyczna o dwóch nauczycielach, którzy zakochują się w sobie podczas szkolnego wyjazdu."
+        "description": "Komedia romantyczna o dwóch nauczycielach, którzy zakochują się w sobie podczas szkolnego wyjazdu.",
+        "image": ""
     },
     {
         "title": "Rycerze Zodiaku",
-        "description": "Japońska animacja na podstawie popularnej mangi i anime o grupie wojowników, którzy walczą ze złem za pomocą zbroi inspirowanych znakami zodiaku."
+        "description": "Japońska animacja na podstawie popularnej mangi i anime o grupie wojowników, którzy walczą ze złem za pomocą zbroi inspirowanych znakami zodiaku.",
+        "image": ""
     },
     {
         "title": "Życie w błocie się złoci",
-        "description": "Polska komedia o dwóch braciach, którzy po śmierci ojca odziedziczyli jego firmę produkującą nawóz organiczny i muszą stawić czoła konkurencji i kryzysowi rodzinnemu."
+        "description": "Polska komedia o dwóch braciach, którzy po śmierci ojca odziedziczyli jego firmę produkującą nawóz organiczny i muszą stawić czoła konkurencji i kryzysowi rodzinnemu.",
+        "image": ""
     },
     {
         "title": "Ernest i Celestyna: Misja muzyka",
-        "description": "Francusko-belgijska animacja dla dzieci o przyjaźni między myszką Celestyną a niedźwiedziem Ernestem, którzy razem tworzą muzykę i przeżywają niesamowite przygody."
+        "description": "Francusko-belgijska animacja dla dzieci o przyjaźni między myszką Celestyną a niedźwiedziem Ernestem, którzy razem tworzą muzykę i przeżywają niesamowite przygody.",
+        "image": ""
     }
 ]
