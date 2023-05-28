@@ -10,6 +10,8 @@ const btnNext = document.getElementById("btn-next");
 const parPageNumber = document.getElementById("par-page-number");
 const pageControl = document.getElementById("page-control");
 const ticketsContainer = document.getElementById("tickets-container");
+const btnBuy = document.getElementById("btn-buy");
+const movieSelect = document.getElementById("movie-select");
 let moviePages = [];
 let pages;
 
@@ -40,12 +42,13 @@ function showMovies() {
     const page = parseInt(parPageNumber.innerHTML);
     moviesContainer.style.display = "grid";
     pageControl.style.display = "flex";
+    ticketsContainer.style.display = "none";
 
     if (page > moviePages.length) { return; }
     moviesContainer.innerHTML = "";
     for (const movie of moviePages[page - 1]) {
         moviesContainer.innerHTML += `
-        <div class="movie">
+        <div class="movie" style="background-image: url(${movie.image});">
             <h3>${movie.title}</h3>
         </div>
         `;
@@ -80,10 +83,16 @@ function showDescription(event) {
     if (event.target.className !== "movie") {
         return;
     }
+    const moviePoster = document.getElementById("movie-poster");
+    moviePoster.innerHTML = "";
+    console.log(moviePoster);
     const allMovies = movies.concat(premiers);
     const findMovie = event.target.innerText;
     for (const movie of allMovies) {
         if (movie.title === findMovie) {
+            const poster = document.createElement("img");
+            poster.setAttribute("src", movie.image);
+            moviePoster.appendChild(poster);
             document.getElementById("movie-title").innerText = movie.title;
             document.getElementById("movie-desc").innerText = movie.description;
             centerContent.style.visibility = "visible";
@@ -105,6 +114,77 @@ function closeDescription(event) {
 function showTickets() {
     pageControl.style.display = "none";
     moviesContainer.style.display = "none";
+    ticketsContainer.style.display = "grid";
+
+    const premiersGroup = document.createElement("optgroup");
+    premiersGroup.setAttribute("label", "Premiery");
+    const movieGroup = document.createElement("optgroup");
+    movieGroup.setAttribute("label", "Filmy");
+
+    for (const premiere of premiers) {
+        premiersGroup.innerHTML += `<option value="${premiere.title}">${premiere.title}</option>`;
+    }
+    for (const movie of movies) {
+        movieGroup.innerHTML += `<option value="${movie.title}">${movie.title}</option>`;
+    }
+    movieSelect.appendChild(premiersGroup);
+    movieSelect.appendChild(movieGroup);
+}
+
+
+function getTickets() {
+    const normalTicsInput = ticketsContainer.querySelector("#normal-tickets");
+    const reducedTicsInput = ticketsContainer.querySelector("#reduced-tickets");
+    const normalTics = Number(normalTicsInput.value);
+    const reducedTics = Number(reducedTicsInput.value);
+    console.log(normalTics);
+
+    if (normalTics < 0) {
+        showError(normalTicsInput);
+        return;
+    } else if (reducedTics < 0) {
+        showError(reducedTicsInput);
+        return;
+    } else if (normalTics === 0 && reducedTics === 0) {
+        showError(normalTicsInput);
+        showError(reducedTicsInput);
+        return;
+    } else if (localStorage.getItem("currentUser") === null) {
+        alert("Zaloguj się aby kupić bilet");
+        return;
+    }
+
+    const order = {
+        nickname: JSON.parse(localStorage.getItem("currentUser")).nickname,
+        movie: movieSelect.value,
+        normalTics: normalTics,
+        reducedTics: reducedTics,
+        price: 20 * normalTics + 13 * reducedTics
+    };
+    btnBuy.innerHTML = "Zakup udany!";
+    btnBuy.style.borderColor = "green";
+    btnBuy.style.backgroundColor = "green";
+    setTimeout(() => {
+        btnBuy.style.borderColor = "orange";
+        btnBuy.style.backgroundColor = "var(--secondaryColour)";
+        btnBuy.innerHTML = "Kupuję";
+    }, 3000);
+    console.log(order)
+    localStorage.setItem("order", JSON.stringify(order));
+}
+
+
+function showError(inputName) {
+    inputName.style.borderColor = "red";
+    inputName.setAttribute("type", "text");
+    inputName.toggleAttribute("disabled");
+    inputName.value = "Niepoprawna liczba biletów";
+    setTimeout(() => {
+        inputName.style.borderColor = "orange";
+        inputName.setAttribute("type", "number");
+        inputName.toggleAttribute("disabled");
+        inputName.value = "";
+    }, 3000);
 }
 
 
@@ -118,3 +198,4 @@ document.addEventListener("click", closeDescription);
 btn3.addEventListener("click", () => { getMovies(movies); showMovies(); });
 btn2.addEventListener("click", showTickets);
 btn1.addEventListener("click", () => { getMovies(premiers); showMovies(); });
+btnBuy.addEventListener("click", getTickets);

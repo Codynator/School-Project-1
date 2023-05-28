@@ -28,14 +28,10 @@
 <body>
     <div class="center-content" id="center-content">
         <div>
-            <div class="movie-poster">
-                <img src="./Styles/Assets/john_wick_4.jpg" alt="">
-            </div>
+            <div class="movie-poster" id="movie-poster"></div>
             <div class="movie-content">
-                <h3 id="movie-title">John Wick 4</h3>
-                <p id="movie-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem consequatur consequuntur ut magni ipsum repellat distinctio, totam quis, odit eligendi deserunt velit ratione earum saepe animi illo quasi cupiditate.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti hic neque rem iure ratione? Nam numquam ullam, blanditiis ut atque impedit cupiditate, sint esse alias excepturi facilis sed. Totam, perferendis.
-                </p>
+                <h3 id="movie-title"></h3>
+                <p id="movie-desc"></p>
             </div>
         </div>
     </div>
@@ -99,10 +95,17 @@
         </div>
 
         <div class="tickets-container" id="tickets-container">
-            <div class="prices">
+            <div>
                 <h3>Cennik</h3>
-                <p>Jeden bilet normalny: 20 zł</p>
-                <p>Jeden bilet ulgowy: 13 zł</p>
+                <p>Jeden bilet normalny: <b>20 zł</b></p>
+                <p>Jeden bilet ulgowy: <b>13 zł</b></p>
+            </div>
+            <div>
+                <h3>Koszyk</h3>
+                <input type="number" id="normal-tickets" placeholder="bilety normalne">
+                <input type="number" id="reduced-tickets" placeholder="bilety ulgowe">
+                <select id="movie-select"></select>
+                <button id="btn-buy" type="button">Kupuję</button>
             </div>
         </div>
         <div class="movies-container" id="movies-container"></div>

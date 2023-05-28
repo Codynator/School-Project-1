@@ -1,52 +1,52 @@
 [
     {
         "title": "Ant-Man and the Wasp: Quantumania",
-        "description": "kolejna produkcja Marvela z udziałem tytułowego superbohatera - Ant-Mana.",
-        "image": "" 
+        "description": "Kolejna produkcja Marvela z udziałem tytułowego superbohatera - Ant-Mana.",
+        "image": "https://img.theepochtimes.com/assets/uploads/2023/02/18/Ant-Man-and-The-Wasp-Quantumania-8-1200x1777.jpg" 
     },
     {
         "title": "Titanic",
-        "description": "powrót kultowego filmu Jamesa Camerona z 1997 roku, który został zremasterowany i wyświetlany w technologii 3D.",
-        "image": ""
+        "description": "Powrót kultowego filmu Jamesa Camerona z 1997 roku, który został zremasterowany i wyświetlany w technologii 3D.",
+        "image": "https://www.tvguide.com/a/img/catalog/provider/1/2/1-9050537522.jpg"
     },
     {
         "title": "Oppenheimer",
-        "description": "film opowiadający o naukowcu Robercie Oppenheimerze, fizyku, który uważany jest za twórcę bomby atomowej. W rolę główną wcieli się Cillian Murphy.",
-        "image": ""
+        "description": "Film opowiadający o naukowcu Robercie Oppenheimerze, fizyku, który uważany jest za twórcę bomby atomowej. W rolę główną wcieli się Cillian Murphy.",
+        "image": "https://dl.kaskus.id/pbs.twimg.com/media/FXTHEA4aIAEs5bv?format=jpg"
     },
     {
         "title": "Barbie",
-        "description": "filmowa adaptacja popularnej lalki, w której główną rolę zagra Margot Robbie.",
-        "image": ""
+        "description": "Filmowa adaptacja popularnej lalki, w której główną rolę zagra Margot Robbie.",
+        "image": "https://imgix.bustle.com/uploads/image/2020/8/26/0464d7b0-0e8f-4f88-bef7-e241360acb50-barbie-princess-adventure-image-8182020.jpg?w=614&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2"
     },
     {
-        "title": "Madame Web",
-        "description": "film o tajemniczej postaci z uniwersum Spider-Mana, która ma zdolność przewidywania przyszłości i łączenia się z pajęczą siecią.",
-        "image": ""
+        "title": "Trzej Muszkieterowie: D’Artagnan",
+        "description": "Głównym bohaterem jest d’Artagnan (w tej roli François Civil), który marzy o tym, by zostać muszkieterem. W realizacji tego pragnienia będą próbowali mu pomóc jego nowi przyjaciele: Atos (Vincent Cassel), Portos (Pio Marmaï) i Aramis (Romain Duris).",
+        "image": "https://historia.org.pl/wp-content/uploads/2023/01/Trzej-Muszkieterowie-DArtagnan.jpeg"
     },
     {
-        "title": "Diuna 2",
-        "description": "kontynuacja ekranizacji słynnej powieści Franka Herberta o walce o planetę Arrakis. W obsadzie znów zobaczymy Timaothée Chalameta, Zendayę i Oscara Isaaca.",
-        "image": ""
+        "title": "Dicht bij Vermeer",
+        "description": "holenderski dramat historyczny o fałszerzu dzieł sztuki, który tworzy fałszywe obrazy Vermeera.",
+        "image": "https://www.lantarenvenster.nl/wp-content/uploads/2023/02/Dicht-bij-Vermeer-poster-lantarenvenster.jpg"
     },
     {
-        "title": "Ballada Ptaków i Węży",
-        "description": "prequel trylogii Igrzyska śmierci, który przedstawia młodość prezydenta Snowa i jego pierwsze spotkanie z Katniss Everdeen.",
-        "image": ""
+        "title": "Book Club. Następny rozdział",
+        "description": "Amerykańska komedia romantyczna o grupie przyjaciółek, które spotykają się regularnie na spotkaniach klubu książki.",
+        "image": "https://th.bing.com/th/id/OIP.jCWb3pFuDLyqrVrofAisRAHaKs?pid=ImgDet&rs=1"
     },
     {
         "title": "Wonka",
-        "description": "film o początkach kariery Willy'ego Wonki, ekscentrycznego właściciela fabryki czekolady. W rolę tytułową wcieli się Timothée Chalamet.",
-        "image": ""
+        "description": "Film o początkach kariery Willy'ego Wonki, ekscentrycznego właściciela fabryki czekolady. W rolę tytułową wcieli się Timothée Chalamet.",
+        "image": "https://www.lavanguardia.com/peliculas-series/images/movie/poster/2023/12/w1280/c5tzazjnSFpFamcS8Whyi5yWx69.jpg"
     },
     {
         "title": "Szybcy i wściekli 10",
-        "description": "dziesiąta część serii o nieustraszonych kierowcach i ich szalonych przygodach. W obsadzie znów zobaczymy Vin Diesela, Michelle Rodriguez i Tyreese Gibsona.",
-        "image": ""
+        "description": "Dziesiąta część serii o nieustraszonych kierowcach i ich szalonych przygodach. W obsadzie znów zobaczymy Vin Diesela, Michelle Rodriguez i Tyreese Gibsona.",
+        "image": "https://th.bing.com/th?id=OIF.koqHx0zq9%2fh50OaYfJ2THQ&pid=ImgDet&rs=1"
     },
     {
         "title": "Super Mario Bros. Film",
-        "description": "animowana adaptacja kultowej gry wideo o przygodach włoskiego hydraulika i jego brata. Film ma być wierny oryginałowi i pełen humoru.",
-        "image": ""
+        "description": "Animowana adaptacja kultowej gry wideo o przygodach włoskiego hydraulika i jego brata. Film ma być wierny oryginałowi i pełen humoru.",
+        "image": "https://img1.ak.crunchyroll.com/i/spire2/c94e7763409ee6bc934e44f22152b3ce1676422682_main.jpg"
     }
 ]

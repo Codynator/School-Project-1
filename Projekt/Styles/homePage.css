@@ -101,6 +101,64 @@ h1 {
     background-color: rgba(255, 166, 0, 0.8);
 }
 
+.tickets-container {
+    background-color: var(--secondaryColour);
+    color: var(--fontSecondaryColour);
+    height: 50vh;
+    margin-inline: 10vw;
+    margin-block: 2em;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.tickets-container > div {
+    font-size: 150%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.tickets-container h3 {
+    border-bottom: 0.1em solid white;
+}
+
+.tickets-container input, .tickets-container button {
+    font-size: 110%;
+    background-color: var(--secondaryColour);
+    color: var(--fontSecondaryColour);
+    text-align: center;
+    border: 0.1em solid orange;
+    transition: 0.3s;
+}
+
+select {
+    font-size: 110%;
+    background-color: var(--secondaryColour);
+    color: var(--fontSecondaryColour);
+    text-align: center;
+    border: 0.1em solid orange;
+}
+
+optgroup {
+    color: orange;
+    text-decoration: underline;
+}
+
+option {
+    color: var(--fontSecondaryColour);
+}
+
+.tickets-container input:focus {
+    outline: none;
+}
+
+.tickets-container button:hover {
+    background-color: orange;
+}
+
 .movies-container {
     margin-inline: 2em;
     padding-bottom: 5%;
@@ -112,6 +170,7 @@ h1 {
 .movies-container h3 {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
+
     width: 100%;
     padding-block: 1em;
 }
