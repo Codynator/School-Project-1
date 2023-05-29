@@ -34,7 +34,6 @@ function getMovies(moviesArr) {
         }
         counter += 8;
     }
-    console.log(moviePages);
 }
 
 
@@ -58,7 +57,6 @@ function showMovies() {
 
 function changePage(direction) {
     let page = parseInt(parPageNumber.innerHTML);
-    console.log(page);
     if (page > moviePages.length) {
         page = moviePages.length;
     }
@@ -85,7 +83,6 @@ function showDescription(event) {
     }
     const moviePoster = document.getElementById("movie-poster");
     moviePoster.innerHTML = "";
-    console.log(moviePoster);
     const allMovies = movies.concat(premiers);
     const findMovie = event.target.innerText;
     for (const movie of allMovies) {
@@ -137,7 +134,6 @@ function getTickets() {
     const reducedTicsInput = ticketsContainer.querySelector("#reduced-tickets");
     const normalTics = Number(normalTicsInput.value);
     const reducedTics = Number(reducedTicsInput.value);
-    console.log(normalTics);
 
     if (normalTics < 0) {
         showError(normalTicsInput);
@@ -150,7 +146,14 @@ function getTickets() {
         showError(reducedTicsInput);
         return;
     } else if (localStorage.getItem("currentUser") === null) {
-        alert("Zaloguj się aby kupić bilet");
+        btnBuy.toggleAttribute("disabled");
+        btnBuy.style.borderColor = "red";
+        btnBuy.innerHTML = "Zaloguj się abu kupić bilety!";
+        setTimeout(() => {
+            btnBuy.toggleAttribute("disabled");
+            btnBuy.style.borderColor = "orange";
+            btnBuy.innerHTML = "Kupuję";
+        }, 3000)
         return;
     }
 
@@ -163,13 +166,10 @@ function getTickets() {
     };
     btnBuy.innerHTML = "Zakup udany!";
     btnBuy.style.borderColor = "green";
-    btnBuy.style.backgroundColor = "green";
     setTimeout(() => {
         btnBuy.style.borderColor = "orange";
-        btnBuy.style.backgroundColor = "var(--secondaryColour)";
         btnBuy.innerHTML = "Kupuję";
     }, 3000);
-    console.log(order)
     localStorage.setItem("order", JSON.stringify(order));
 }
 
@@ -195,7 +195,7 @@ btnNext.addEventListener("click", () => { changePage("up") });
 moviesContainer.addEventListener("click", showDescription);
 document.addEventListener("keydown", closeDescription);
 document.addEventListener("click", closeDescription);
-btn3.addEventListener("click", () => { getMovies(movies); showMovies(); });
+btn3.addEventListener("click", () => { getMovies(movies); showMovies();});
 btn2.addEventListener("click", showTickets);
-btn1.addEventListener("click", () => { getMovies(premiers); showMovies(); });
+btn1.addEventListener("click", () => { getMovies(premiers); showMovies();});
 btnBuy.addEventListener("click", getTickets);

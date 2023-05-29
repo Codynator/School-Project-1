@@ -40,7 +40,6 @@ function logout() {
 // Otwiera i zamyka menu
 function showMenu() {
     menu.classList.toggle("open");
-    console.log(divMenu.style.visibility);
 
     // Wyłączanie i włączanie widoczności div-menu
     if (divMenu.style.visibility === "visible") {

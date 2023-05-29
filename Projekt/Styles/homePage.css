@@ -19,7 +19,10 @@ body {
 header {
     width: 100%;
     height: 50vh;
-    background-color: darkblue;
+    background-image: url("https://static0.srcdn.com/wordpress/wp-content/uploads/2021/06/What-to-expect-from-fast-and-furious-10-Jakob-The-rock-return-.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     color: var(--fontSecondaryColour);
     display: flex;
     justify-content: center;
@@ -28,6 +31,8 @@ header {
 
 h1 {
     border-bottom: 0.1em solid orange;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5vw;
 }
 
 .center-content {

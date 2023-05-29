@@ -2,91 +2,111 @@
     {
         "title": "Strażnicy Galaktyki: Volume 3",
         "description": "Trzecia część przygód kosmicznych awanturników z uniwersum Marvela. W reżyserii Jamesa Gunna.",
-        "image": "galaxy-guardians-3.jpg"
+        "image": "https://i.redd.it/u9yhv7wj84651.png"
     },
     {
         "title": "John Wick 4",
         "description": "Czwarta część serii o niezwykle skutecznym płatnym zabójcy, który musi stawić czoła kolejnym wrogom. W roli głównej Keanu Reeves.",
-        "image": "john_wick_4.jpg"
+        "image": "https://i.pinimg.com/736x/26/c7/8a/26c78ab70e8ffa3ab0ff37ce58b2cd3b.jpg"
     },
     {
         "title": "Dungeons & Dragons: Złodziejski honor",
         "description": "Filmowa adaptacja popularnej gry fabularnej o świecie pełnym magii i potworów. W obsadzie Chris Pine, Michelle Rodriguez i Hugh Grant.",
-        "image": ""
+        "image": "https://images.gram.pl/news/embed/vcfs20221205153431588pnjk.jpg"
     },
     {
-        "title": "Air",
-        "description": "Dramat sportowy o młodym bokserze, który musi zmierzyć się z własnymi demonami i rywalami na ringu. W roli głównej Kelvin Harrison Jr.",
-        "image": ""
+        "title": "Avengers: Koniec gry",
+        "description": "Po wydarzeniach w trzeciej części Avengers, pozostali przy życiu superbohaterowie próbują pokonać Thanosa i odwrócić jego działania, które doprowadziły do wymazania połowy istnień we wszechświecie.",
+        "image": "https://zalukaj-tv.pl/wp-content/uploads/avengers-koniec-gry-2461-poster-scaled.jpg"
     },
     {
-        "title": "Fenomen",
-        "description": "Dokumentalny film o fenomenie polskiego kina i jego wpływie na światową kinematografię. W filmie występują m.in. Andrzej Wajda, Roman Polański i Agnieszka Holland.",
-        "image": ""
+        "title": "Joker",
+        "description": "Historia postaci z komiksów Batmana, która staje się jednym z największych złoczyńców w Gotham City.",
+        "image": "https://wallpapercave.com/wp/wp4606146.jpg"
     },
     {
-        "title": "Tetris",
-        "description": "Film opowiadający o historii powstania i sukcesie kultowej gry wideo Tetris. W rolach głównych Taron Egerton, Jon S. Baird i Timur Bekmambetov.",
-        "image": ""
+        "title": "Parasite",
+        "description": "Historia dwóch rodzin o skrajnie różnych poziomach życia, które przypadkowo się spotykają i zaczynają ze sobą współpracować³.",
+        "image": "https://assets.fontsinuse.com/static/use-media-items/97/96759/full-1351x1800/5d940c87/parasite_poster.jpeg"
     },
     {
         "title": "Jestem otchłanią",
         "description": "Włoski dramat o młodej kobiecie, która pracuje jako nurkarka w podwodnym laboratorium i odkrywa niezwykłą więź z głębinami morza.",
-        "image": ""
+        "image": "https://www.kinowki.bid/l/2023/04/Jestem-Otchlania-Plakat-th.jpg"
     },
     {
-        "title": "Głodni",
-        "description": "Tajski dramat o grupie nastolatków, którzy muszą przetrwać w świecie pełnym przemocy i korupcji. Film zdobył wiele nagród na międzynarodowych festiwalach.",
-        "image": ""
+        "title": "The Irishman",
+        "description": "Opowieść o mafijnym zabójcy Franku Sheeranie i jego powiązaniach z rodziną Bufalino.",
+        "image": "https://i.redd.it/fdtkbdq79t341.jpg"
     },
     {
-        "title": "Missing",
-        "description": "Thriller o młodej kobiecie, która próbuje odnaleźć swoją zaginioną siostrę. W rolach głównych Elizabeth Olsen, Jason Sudeikis i Dakota Fanning.",
-        "image": ""
+        "title": "Once Upon a Time in Hollywood",
+        "description": "Film opowiada o losach aktora Ricka Daltona i jego przyjaciela i kaskadera Cliffa Bootha w Hollywood w 1969 roku.",
+        "image": "https://i0.wp.com/aarsskriftet-critique.dk/wp-content/uploads/2019/08/a3378998b6e42c1f2712229459b1ac78b4a24776.jpg?fit=1131%2C1600&ssl=1"
     },
     {
         "title": "Siła ducha",
         "description": "Biograficzny film o Jessice Watson, australijskiej żeglarka, która jako najmłodsza osoba na świecie opłynęła samotnie świat. W roli głównej Teagan Croft.",
-        "image": ""
+        "image": "https://pics.filmaffinity.com/true_spirit-580053601-large.jpg"
     },
     {
-        "title": "Oszustwo",
-        "description": "Film o oszustce, która wykorzystuje swoje umiejętności do zdobywania bogatych mężczyzn. W rolach głównych Julianne Moore, Sebastian Stan i Bobby Cannavale.",
-        "image": ""
+        "title": "Marriage Story",
+        "description": "Historia rozwodu pary aktorskiej i ich walki o opiekę nad synem.",
+        "image": "https://vergemagazine.co.uk/wp-content/uploads/2019/10/MarriageStory_Vertical_Main_RGB_UK-THEATRICAL-691x1024.jpg"
     },
     {
         "title": "Siedmiu krolów musi umrzeć",
         "description": "Filmowa adaptacja bestsellerowej powieści Bernarda Cornwella o losach Uhtreda z Bebbanburga w czasach wikingów. W rolach głównych Alexander Dreymon, Emily Cox i David Dawson.",
-        "image": ""
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Last_kingdom_seven_kings_must_die.png/220px-Last_kingdom_seven_kings_must_die.png"
     },
     {
         "title": "Magiczna słonica",
         "description": "Animowany film o chłopcu, który szuka swojej zaginionej siostry z pomocą magicznej słonicy. Film jest ekranizacją powieści Kate DiCamillo.",
-        "image": ""
+        "image": "https://th.bing.com/th/id/OIP.QJJTreOkXGXZkQowxFyVTAEsHC?pid=ImgDet&rs=1"
     },
     {
         "title": "Bo się boi",
         "description": "Horror komediowy o mężczyźnie, który musi stawić czoła swoim największym lękom po śmierci matki. W rolach głównych Beau Bridges, Alison Brie i John Cena.",
-        "image": ""
+        "image": "https://www.kinowki.bid/l/2023/04/Bo-Sie-Boi-Plakat-th.jpg"
     },
     {
         "title": "Skołowani",
         "description": "Komedia romantyczna o dwóch nauczycielach, którzy zakochują się w sobie podczas szkolnego wyjazdu.",
-        "image": ""
+        "image": "https://www.kinowki.bid/l/2023/04/Skolowani-Plakat-th.jpg"
     },
     {
         "title": "Rycerze Zodiaku",
         "description": "Japońska animacja na podstawie popularnej mangi i anime o grupie wojowników, którzy walczą ze złem za pomocą zbroi inspirowanych znakami zodiaku.",
-        "image": ""
+        "image": "https://sm.ign.com/ign_pl/screenshot/default/20545418-1069602733170364-9005322483139783839-o_ynzc.jpg"
     },
     {
         "title": "Życie w błocie się złoci",
         "description": "Polska komedia o dwóch braciach, którzy po śmierci ojca odziedziczyli jego firmę produkującą nawóz organiczny i muszą stawić czoła konkurencji i kryzysowi rodzinnemu.",
-        "image": ""
+        "image": "https://th.bing.com/th/id/OIP.ACcZGNwP2RKwVerrak46SQHaLH?pid=ImgDet&rs=1"
     },
     {
         "title": "Ernest i Celestyna: Misja muzyka",
         "description": "Francusko-belgijska animacja dla dzieci o przyjaźni między myszką Celestyną a niedźwiedziem Ernestem, którzy razem tworzą muzykę i przeżywają niesamowite przygody.",
-        "image": ""
+        "image": "https://www.kinowki.bid/l/2023/05/Ernest-I-Celestyna-Misja-Muzyka-Plakat-th.jpg"
+    },
+    {
+        "title": "Knives Out",
+        "description": "Fetektyw Benoit Blanc prowadzi śledztwo w sprawie morderstwa znanego pisarza Harlana Thrombeya.",
+        "image": "https://www.julienjamar.com/wp-content/uploads/2020/03/Knives-Out-Promo.jpg"
+    },
+    {
+        "title": "1917",
+        "description": "Film opowiada historię dwóch brytyjskich żołnierzy podczas I wojny światowej, którzy zostają wysłani na misję ratunkową za linie frontu.",
+        "image": "https://th.bing.com/th/id/R.77907a9f494419056461166640ffdb1e?rik=hsTbjKf9kWuwGw&pid=ImgRaw&r=0"
+    },
+    {
+        "title": "Little Women",
+        "description": "Ekranizacja powieści Louisy May Alcott o czterech siostrach March.",
+        "image": "https://wallpapercave.com/wp/wp4453731.jpg"
+    },
+    {
+        "title": "Jojo Rabbit",
+        "description": "Film opowiada historię chłopca Jojo, który wyobraża Hitlera jako swojego wyimaginowanego przyjaciela, z którym świetnie się bawi.",
+        "image": "https://s4.scoopwhoop.com/anj2/5e3a675150758d4cadd4f39d/5d76b121-77be-4731-b1b2-6a0aad12d650.jpg"
     }
 ]
