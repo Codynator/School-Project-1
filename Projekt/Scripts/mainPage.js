@@ -12,6 +12,7 @@ const pageControl = document.getElementById("page-control");
 const ticketsContainer = document.getElementById("tickets-container");
 const btnBuy = document.getElementById("btn-buy");
 const movieSelect = document.getElementById("movie-select");
+const hotbar = document.getElementById("hotbar");
 let moviePages = [];
 let pages;
 
@@ -157,7 +158,7 @@ function getTickets() {
         return;
     }
 
-    const order = {
+    const newOrder = {
         nickname: JSON.parse(localStorage.getItem("currentUser")).nickname,
         movie: movieSelect.value,
         normalTics: normalTics,
@@ -170,7 +171,10 @@ function getTickets() {
         btnBuy.style.borderColor = "orange";
         btnBuy.innerHTML = "Kupuję";
     }, 3000);
-    localStorage.setItem("order", JSON.stringify(order));
+    
+    orders.push(newOrder);
+    ordersJSON = JSON.stringify(orders);
+    localStorage.setItem("orders", ordersJSON);
 }
 
 
@@ -188,8 +192,34 @@ function showError(inputName) {
 }
 
 
+function setOutline(event, firstName = false) {
+    if (firstName === true) {
+        btn3.style.outline = "0.2em solid rgba(255, 166, 0, 0.8)";
+        return;
+    }
+    const buttons = hotbar.querySelectorAll("button");
+    const btn = document.getElementById(event.target.id);
+    if (event.target.tagName === "DIV") {
+        return;
+    }
+    for (const button of buttons) {
+        button.style.outline = "none";
+    }
+    btn.style.outline = "0.2em solid rgba(255, 166, 0, 0.8)";
+}
+
+let orders = [];
+let ordersJSON = localStorage.getItem("orders");
+if (ordersJSON === null) {
+    ordersJSON = JSON.stringify(orders);
+    localStorage.setItem("orders", ordersJSON);
+} else {
+    orders = JSON.parse(localStorage.getItem("orders"));
+}
+
 getMovies(movies);
 showMovies();
+setOutline(null, true);
 btnPrev.addEventListener("click", () => { changePage("down") });
 btnNext.addEventListener("click", () => { changePage("up") });
 moviesContainer.addEventListener("click", showDescription);
@@ -198,4 +228,5 @@ document.addEventListener("click", closeDescription);
 btn3.addEventListener("click", () => { getMovies(movies); showMovies();});
 btn2.addEventListener("click", showTickets);
 btn1.addEventListener("click", () => { getMovies(premiers); showMovies();});
+hotbar.addEventListener("click", setOutline);
 btnBuy.addEventListener("click", getTickets);

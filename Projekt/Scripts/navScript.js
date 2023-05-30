@@ -54,6 +54,12 @@ const toggle = document.getElementById("btn-menu");
 const menu = document.getElementById("menu");
 const divMenu = document.getElementById("div-menu");
 
+const btnHome = document.getElementById("btn-home");
+const btnWelcome = document.getElementById("btn-welcome");
+const btnSettings = document.getElementById("btn-settings");
+const btnInfo = document.getElementById("btn-info");
+const btnHelp = document.getElementById("btn-help");
+
 const divProfile = document.getElementById("div-profile");
 const profile = document.getElementById("profile");
 const btnLogin = document.getElementById("btn-login");
@@ -65,4 +71,10 @@ login(false);
 btnLogin.addEventListener("click", login);
 toggle.addEventListener("click", showMenu);
 btnLogout.addEventListener("click", logout);
+
+btnHome.addEventListener("click", () => {location.assign("./homePage.html")});
+btnWelcome.addEventListener("click", () => {location.assign("./welcomePage.html")});
+btnSettings.addEventListener("click", () => {location.assign("./settings.html")});
+btnInfo.addEventListener("click", () => {location.assign("./info.html")});
+btnHelp.addEventListener("click", () => {location.assign("./help.html")});
 divProfile.style.visibility = "hidden";

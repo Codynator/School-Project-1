@@ -29,7 +29,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+.title-screen a {
+    color: var(--fontSecondaryColour);
+}
+
+/* .title-screen p {
+    position: relative;
+    bottom: -1em;
+} */
 
 /* * Main */
 

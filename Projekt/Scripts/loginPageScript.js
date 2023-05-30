@@ -31,7 +31,6 @@ function checkStatus() {
 
 // Logowanie. Pobiera dane, sprawdza wszystko po kolei i loguje.
 function login() {
-    console.log("Próba logowania...")
     const nickname = loginForm.nickInput.value.trim();
     const email = loginForm.emailInput.value.trim();
     const password = loginForm.passwordInput.value.trim();
@@ -49,7 +48,6 @@ function login() {
     }
 
     if (findUser(searchedUser, true)) {
-        console.log("Zalogowano!");
         formContainer.style.display = "none";
         loggedContainer.style.display = "flex";
         loggedContainer.querySelector("p").innerHTML = `Witaj <b>${nickname}</b>!`;
@@ -92,7 +90,6 @@ function register() {
     users.push(newUser);
     usersJSON = JSON.stringify(users);
     localStorage.setItem("users", usersJSON);
-    console.log(users);
     login();
 }
 
@@ -186,13 +183,10 @@ let users = [
 let usersJSON = localStorage.getItem("users");
 
 if (usersJSON === null) {
-    console.log("Eksport użytkowników...")
     usersJSON = JSON.stringify(users);
     localStorage.setItem("users", usersJSON);
 } else {
-    console.log("Import użytkowników...");
     users = JSON.parse(localStorage.getItem("users"));
-    console.log(users);
 }
 
 

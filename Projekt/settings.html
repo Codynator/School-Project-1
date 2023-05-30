@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona główna</title>
-
+    <title>Ustawienia</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./Styles/indexStyle.css">
-    <link rel="stylesheet" href="./Styles/navStyle.css">
     <link rel="stylesheet" href="./Styles/footerStyle.css">
-    <link rel="stylesheet" href="./Styles/homePage.css">
-    <link rel="stylesheet" href="./Styles/loaderStyle.css">
-    <link rel="shortcut icon" href="./Styles/Assets/home.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/navStyle.css">
+    <link rel="stylesheet" href="./Styles/settingsStyle.css">
+    <link rel="shortcut icon" href="./Styles/Assets/settings.svg" type="image/x-icon">
     <style>
         .material-symbols-outlined {
             font-variation-settings:
@@ -28,19 +26,6 @@
 </head>
 
 <body>
-    <div class="fade-out" id="loader">
-        <div class="load-text">Ładowanie...</div>
-    </div>
-
-    <div class="center-content" id="center-content">
-        <div>
-            <div class="movie-poster" id="movie-poster"></div>
-            <div class="movie-content">
-                <h3 id="movie-title"></h3>
-                <p id="movie-desc"></p>
-            </div>
-        </div>
-    </div>
     <nav>
         <div class="nav-btn">
             <button id="btn-menu" type="button" class="menu-btn"><span
@@ -61,11 +46,11 @@
         <!-- * Struktura menu -->
         <div id="div-menu" class="div-menu">
             <div class="menu" id="menu">
-                <button type="button" id="btn-home" style="display: none;"><span class="material-symbols-outlined">home</span>główna
+                <button type="button" id="btn-home"><span class="material-symbols-outlined">home</span>główna
                     strona</button>
                 <button type="button" id="btn-welcome"><span
-                    class="material-symbols-outlined">rocket_launch</span>Witaj!</button>
-                <button type="button" id="btn-settings"><span
+                        class="material-symbols-outlined">rocket_launch</span>Witaj!</button>
+                <button type="button" id="btn-settings" style="display: none;"><span
                         class="material-symbols-outlined">settings</span>ustawienia</button>
                 <button type="button" id="btn-info"><span
                         class="material-symbols-outlined">info</span>informacje</button>
@@ -87,43 +72,10 @@
         </div>
     </nav>
 
-    <header>
-        <h1>Premiera <em>Szybkich i Wściekłych 10</em> już u nas!</h1>
-    </header>
-
     <main>
-        <div class="hotbar" id="hotbar">
-            <div>
-                <button type="button" id="btn-1">Premiery</button>
-            </div>
-            <div>
-                <button type="button" id="btn-2">Kup bilet</button>
-            </div>
-            <div>
-                <button type="button" id="btn-3">Lista filmów</button>
-            </div>
-        </div>
+        <h1>Ustawienia</h1>
 
-        <div class="tickets-container" id="tickets-container">
-            <div>
-                <h3>Cennik</h3>
-                <p>Jeden bilet normalny: <b>20 zł</b></p>
-                <p>Jeden bilet ulgowy: <b>13 zł</b></p>
-            </div>
-            <div>
-                <h3>Koszyk</h3>
-                <input type="number" id="normal-tickets" placeholder="bilety normalne">
-                <input type="number" id="reduced-tickets" placeholder="bilety ulgowe">
-                <select id="movie-select"></select>
-                <button id="btn-buy" type="button">Kupuję</button>
-            </div>
-        </div>
-        <div class="movies-container" id="movies-container"></div>
-        <div class="page-control" id="page-control">
-            <button id="btn-prev"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
-            <p id="par-page-number">1</p>
-            <button id="btn-next"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
-        </div>
+        <div class="account-container" id="account-container"></div>
     </main>
 
     <footer>
@@ -131,11 +83,10 @@
         <p>deepdivecinema@mail.pl</p>
     </footer>
 
+    <script src="./Scripts/navScript.js"></script>
     <script src="./Scripts/themeChanger.js"></script>
     <script src="./Scripts/dateScript.js"></script>
-    <script src="./Scripts/navScript.js"></script>
-    <script src="./Scripts/mainPage.js" type="module"></script>
-    <script src="./Scripts/loader.js"></script>
+    <script src="./Scripts/settingsScript.js"></script>
 </body>
 
 </html>
