@@ -64,6 +64,7 @@ const divProfile = document.getElementById("div-profile");
 const profile = document.getElementById("profile");
 const btnLogin = document.getElementById("btn-login");
 const btnLogout = document.getElementById("btnLogout");
+const btnAccount = document.getElementById("btnAccount");
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
 
@@ -77,4 +78,5 @@ btnWelcome.addEventListener("click", () => {location.assign("./welcomePage.html"
 btnSettings.addEventListener("click", () => {location.assign("./settings.html")});
 btnInfo.addEventListener("click", () => {location.assign("./info.html")});
 btnHelp.addEventListener("click", () => {location.assign("./help.html")});
+btnAccount.addEventListener("click", () => {location.assign("./settings.html")});
 divProfile.style.visibility = "hidden";

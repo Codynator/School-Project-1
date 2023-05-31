@@ -22,6 +22,9 @@
                 'opsz' 48;
             font-size: 200%;
         }
+        p {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -50,9 +53,9 @@
                     strona</button>
                 <button type="button" id="btn-welcome"><span
                         class="material-symbols-outlined">rocket_launch</span>Witaj!</button>
-                <button type="button" id="btn-settings" style="display: none;"><span
+                <button type="button" id="btn-settings"><span
                         class="material-symbols-outlined">settings</span>ustawienia</button>
-                <button type="button" id="btn-info"><span
+                <button type="button" id="btn-info" style="display: none;"><span
                         class="material-symbols-outlined">info</span>informacje</button>
                 <button type="button" id="btn-help" style="display: none;"><span class="material-symbols-outlined">help</span>pomoc</button>
             </div>
@@ -73,32 +76,12 @@
     </nav>
 
     <main>
-        <h1>Ustawienia</h1>
-
-        <div class="account-container" id="account-container">
-            <div class="account" id="account"></div>
-            <div class="btn-container" id="btn-container">
-                <button><span class="material-symbols-outlined">password</span>Pokaż hasło</button>
-                <button><span class="material-symbols-outlined">person</span>Zmień nick</button>
-                <button><span class="material-symbols-outlined">mail</span>Zmień email</button>
-                <button class="remove-btn"><span class="material-symbols-outlined">delete</span>Usuń konto</button>
-            </div>
-        </div>
-
-        <div class="orders-container" id="orders-container">
-            <h3>Historia zakupów</h3>
-        </div>
+        <h1>Informacje</h1>
+        <p>Strona powstała jedynie w celach edukacyjnych w ramach projektu szkolnego. Nie roszczę praw do żadnych zamieszczonych grafik na tej stronie.<br>Zbieżność nazwy kina jest przypadkowa.<br>Po skończeniu projektu, strona nie będzie dalej rozwijana.</p>
     </main>
-
-    <footer>
-        <p id="par-copy">© DeepDive Cinema</p>
-        <p>deepdivecinema@mail.pl</p>
-    </footer>
 
     <script src="./Scripts/navScript.js"></script>
     <script src="./Scripts/themeChanger.js"></script>
-    <script src="./Scripts/dateScript.js"></script>
-    <script src="./Scripts/settingsScript.js"></script>
 </body>
 
 </html>
