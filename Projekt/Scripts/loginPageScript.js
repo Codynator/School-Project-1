@@ -182,7 +182,7 @@ let users = [
 ];
 let usersJSON = localStorage.getItem("users");
 
-if (usersJSON === null) {
+if (usersJSON === null || usersJSON === "[]") {
     usersJSON = JSON.stringify(users);
     localStorage.setItem("users", usersJSON);
 } else {

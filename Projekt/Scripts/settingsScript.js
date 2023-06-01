@@ -32,16 +32,32 @@ function showPassword() {
 
 
 function changeNick() {
-    const newNick = prompt("Podaj nowy nick:");
-    updateData("changeNick", newNick);
-    showAccountData();
+    inputContainer.style.display = "flex";
+    input.setAttribute("type", "text");
+    input.setAttribute("placeholder", "zmień nazwę użykownika");
+    let newNick;
+    btn.addEventListener("click", () => {
+        newNick = input.value.trim();
+        updateData("changeNick", newNick);
+        showAccountData();
+        inputContainer.style.display = "none";
+        return;
+    });
 }
 
 
 function changeEmail() {
-    const newEmail = prompt("Podaj nowy email:");
-    updateData("changeEmail", newEmail);
-    showAccountData();
+    inputContainer.style.display = "flex";
+    input.setAttribute("type", "email");
+    input.setAttribute("placeholder", "zmień adres email");
+    let newEmail;
+    btn.addEventListener("click", () => {
+        newEmail = input.value.trim();
+        updateData("changeEmail", newEmail);
+        showAccountData();
+        inputContainer.style.display = "none";
+        return;
+    });
 }
 
 
@@ -120,6 +136,10 @@ const btnContainer = document.getElementById("btn-container");
 const account = document.getElementById("account");
 const buttons = btnContainer.querySelectorAll("button");
 const ordersContainer = document.getElementById("orders-container");
+const inputContainer = document.getElementById("input-container");
+const h3 = inputContainer.querySelector("h3");
+const input = inputContainer.querySelector("input");
+const btn = inputContainer.querySelector("button");
 
 showAccountData();
 showOrders();
@@ -127,3 +147,8 @@ buttons[0].addEventListener('click', showPassword);
 buttons[1].addEventListener("click", changeNick);
 buttons[2].addEventListener("click", changeEmail);
 buttons[3].addEventListener("click", removeAccount);
+inputContainer.addEventListener("click", (event) => {
+    if (event.target.id === "input-container") {
+        inputContainer.style.display = "none";
+    }
+});

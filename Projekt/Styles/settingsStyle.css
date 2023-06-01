@@ -17,6 +17,68 @@ h1 {
     border-bottom: 0.1em solid orange;
 }
 
+.input-container {
+    z-index: 11;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container div {
+    background-color: var(--mainColour);
+    color: var(--fontColour);
+    border-radius: 1em;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container h3 {
+    position:relative;
+    top: -9vh;
+    font-size: 160%;
+}
+
+.input-container input {
+    text-align: center;
+    width: 30vw;
+    border: 0.1em solid orange;
+    margin-bottom: 2em;
+    font-size: 120%;
+    background-color: var(--mainColour);
+    color: var(--fontColour);
+}
+
+.input-container input:focus {
+    width: 30vw;
+    border: 0.1em solid orange;
+    margin-bottom: 2em;
+    font-size: 120%;
+    background-color: var(--mainColour);
+    color: var(--fontColour);
+    outline: none;
+}
+
+.input-container button {
+    width: 30vw;
+    border: 0.1em solid orange;
+    font-size: 120%;
+    background-color: var(--mainColour);
+    color: var(--fontColour);
+    transition: 0.3s;
+}
+
+.input-container button:hover {
+    background-color: orange;
+}
+
 .account-container {
     background-color: var(--secondaryColour);
     color: var(--fontSecondaryColour);
